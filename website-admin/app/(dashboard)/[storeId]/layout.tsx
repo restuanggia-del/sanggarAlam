@@ -1,3 +1,4 @@
+import { Footer } from "@/components/footer";
 import Navbar from "@/components/navbar";
 import db from "@/lib/db";
 import { auth } from "@clerk/nextjs/server";
@@ -39,6 +40,7 @@ export default async function DashboardLayout({
     <>
       <Navbar />
       {children}
+      <Footer />
     </>
   );
 }

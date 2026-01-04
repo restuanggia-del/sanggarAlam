@@ -54,7 +54,7 @@ const DashboardPage = async ({ params }: DashboardPageProps) => {
                 Settings
               </Button>
             </Link>
-            <Button asChild variant="ghost" size="sm">
+            <Button asChild variant="outline" size="sm">
               <a
                 href={`${
                   process.env.NEXT_PUBLIC_STORE_URL ?? "http://localhost:3001"
@@ -101,7 +101,9 @@ const DashboardPage = async ({ params }: DashboardPageProps) => {
         </p>
         <div className="mt-4 flex items-center gap-2">
           <Link href={`/${storeId}/products`}>
-            <Button className="cursor-pointer" size="sm">Manage Products</Button>
+            <Button className="cursor-pointer" size="sm">
+              Manage Products
+            </Button>
           </Link>
           <Link href={`/${storeId}/categories`}>
             <Button className="cursor-pointer" variant="outline" size="sm">
@@ -109,7 +111,7 @@ const DashboardPage = async ({ params }: DashboardPageProps) => {
             </Button>
           </Link>
           <Link href={`/${storeId}/banners`}>
-            <Button className="cursor-pointer" variant="ghost" size="sm">
+            <Button className="cursor-pointer" variant="outline" size="sm">
               Manage Banners
             </Button>
           </Link>

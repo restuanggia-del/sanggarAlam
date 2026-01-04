@@ -16,7 +16,7 @@ Install:
 
 ### Clone Repository
 ```bash
-git clone https://github.com/username/sanggar-alam.git
+git clone https://github.com/restuanggia-del/sanggarAlam.git
 cd sanggar-alam
 
 Install Dependency

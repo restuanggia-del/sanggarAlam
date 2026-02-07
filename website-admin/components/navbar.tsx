@@ -28,21 +28,22 @@ const Navbar = async () => {
 
   return (
     <div className="border-b bg-background">
-      <div className="grid h-16 grid-cols-3 items-center px-4">
-        <div className="flex items-center">
-          <StoreSwitcher items={stores} />
-        </div>
-        <div className="flex justify-center">
-          <MainNav />
-        </div>
-        <div className="flex items-center justify-end gap-3">
-          <span className="hidden md:block text-sm text-muted-foreground">
-            Hi, {displayName}
-          </span>
-
-          <div className="relative">
-            <span className="absolute -bottom-1 -right-1 h-2 w-2 rounded-full bg-green-500 ring-2 ring-background" />
-            <UserButton afterSignOutUrl="/" />
+      <div className="mx-auto max-w-screen-2xl px-6">
+        <div className="grid h-16 grid-cols-3 items-center">
+          <div className="flex items-center">
+            <StoreSwitcher items={stores} />
+          </div>
+          <div className="flex justify-center">
+            <MainNav />
+          </div>
+          <div className="flex items-center justify-end gap-3">
+            <span className="hidden md:block text-sm text-muted-foreground">
+              Hi, {displayName}
+            </span>
+            <div className="relative">
+              <span className="absolute -bottom-1 -right-1 h-2 w-2 rounded-full bg-green-500 ring-2 ring-background" />
+              <UserButton afterSignOutUrl="/" />
+            </div>
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ const Footer = () => {
   const telp = process.env.NEXT_PUBLIC_TELP ?? "";
   const WA_LINK = telp
     ? `https://wa.me/${telp}?text=${encodeURIComponent(
-        "Halo Sanggar Alam 👋, saya ingin konsultasi."
+        "Halo Sanggar Alam 👋, saya ingin konsultasi.",
       )}`
     : "#";
 
@@ -17,7 +17,6 @@ const Footer = () => {
     <footer className="bg-neutral-50 border-t mt-16">
       <div className="mx-auto max-w-7xl px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* brand */}
           <div className="space-y-3">
             <h3 className="text-lg font-bold text-neutral-900">Sanggar Alam</h3>
             <p className="text-sm text-neutral-600 leading-relaxed">
@@ -25,7 +24,6 @@ const Footer = () => {
               pengalaman lebih dari 10 tahun.
             </p>
           </div>
-          {/* layanan */}
           <div>
             <h4 className="text-sm font-semibold text-neutral-900 mb-3">
               Layanan
@@ -37,7 +35,6 @@ const Footer = () => {
               <li>Custom Proyek</li>
             </ul>
           </div>
-          {/* navigasi */}
           <div>
             <h4 className="text-sm font-semibold text-neutral-900 mb-3">
               Navigasi
@@ -66,13 +63,11 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          {/* contact */}
           <div>
             <h4 className="text-sm font-semibold text-neutral-900 mb-3">
               Kontak
             </h4>
             <ul className="space-y-3 text-sm text-neutral-600">
-              {/* whatsapp */}
               <li>
                 <Link
                   href={WA_LINK}
@@ -84,7 +79,6 @@ const Footer = () => {
                   <span>{telp || "Hubungi via WhatsApp"}</span>
                 </Link>
               </li>
-              {/* maps */}
               <li>
                 <Link
                   href={MAPS_LINK}
@@ -98,7 +92,6 @@ const Footer = () => {
                   </span>
                 </Link>
               </li>
-              {/* email */}
               <li>
                 <Link
                   href={`mailto:${EMAIL}`}
@@ -111,7 +104,6 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        {/* copyright */}
         <div className="mt-10 border-t pt-6 text-center text-xs text-neutral-500">
           &copy; {new Date().getFullYear()} Sanggar Alam. All rights reserved.
         </div>

@@ -21,7 +21,6 @@ const Info: React.FC<InfoProps> = ({ data }) => {
     }
   }, [data.id]);
 
-  // 🔥 WhatsApp consultation link (auto message)
   const waLink = createWhatsAppLink({
     product: data.name,
     category: data.category?.name,
@@ -30,9 +29,7 @@ const Info: React.FC<InfoProps> = ({ data }) => {
 
   return (
     <div>
-      {/* nama produk */}
       <h1 className="text-3xl font-bold text-gray-900">{data.name}</h1>
-      {/* harga */}
       <div className="mt-3 flex items-end justify-between">
         <p className="text-2xl text-gray-900">
           <Currency value={data.price} />
@@ -41,7 +38,6 @@ const Info: React.FC<InfoProps> = ({ data }) => {
 
       <hr className="my-4" />
 
-      {/* cta */}
       <div className="mt-10 flex items-center gap-x-3">
         <Link href={waLink} target="_blank" rel="noopener noreferrer">
           <Button className="bg-green-600 hover:bg-green-700 text-white flex items-center gap-x-2">

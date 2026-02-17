@@ -3,7 +3,6 @@ import { Urbanist } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
-import { Scroll } from "lucide-react";
 import ScrollToTop from "@/components/scroll-to-top";
 
 const urbanist = Urbanist({
@@ -25,7 +24,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${urbanist.variable} antialiased`}>
         <Navbar />
-        {children}
+
+        <main className="pt-16">{children}</main>
+
         <ScrollToTop />
         <Footer />
       </body>

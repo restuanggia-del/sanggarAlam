@@ -17,7 +17,7 @@ const NavbarClient: React.FC<NavbarClientProps> = ({ categories }) => {
   const waLink = createWhatsAppLink({});
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b">
+    <header className="fixed top-0 left-0 w-full z-50 bg-white border-b">
       <div className="mx-auto max-w-screen-xl px-4">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex flex-col leading-tight">

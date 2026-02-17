@@ -1,6 +1,8 @@
 import { Product } from "@/types";
 import NoResults from "./ui/no-results";
 import ProductCard from "./ui/product-card";
+import { Scroll } from "lucide-react";
+import ScrollReveal from "./scroll-reveal";
 
 interface ProductListProps {
   title: string;
@@ -18,7 +20,9 @@ const ProductList: React.FC<ProductListProps> = ({ title, items }) => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {items.map((item) => (
-          <ProductCard key={item.id} data={item} />
+          <ScrollReveal key={item.id}>
+            <ProductCard key={item.id} data={item} />
+          </ScrollReveal>
         ))}
       </div>
     </section>

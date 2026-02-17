@@ -11,18 +11,21 @@ export const createWhatsAppLink = ({
 
   if (!telp) return "#";
 
-  const message = `
-Halo Sanggar Alam 👋
-Saya ingin konsultasi.
+  const message = `Halo Sanggar Alam 👋
 
-Produk: ${product}
-Kategori: ${category}
-${url ? `Link: ${url}` : ""}
+Saya ingin konsultasi terkait layanan berikut:
 
-Lokasi proyek:
-Perkiraan ukuran:
-Catatan tambahan:
-`;
+📌 Produk: ${product}
+📂 Kategori: ${category}
+${url ? `🔗 Referensi produk: ${url}` : ""}
+
+Detail proyek:
+📍 Lokasi:
+📏 Perkiraan ukuran:
+📝 Deskripsi tambahan:
+
+Mohon informasi estimasi biaya dan proses pengerjaan.
+Terima kasih.`;
 
   return `https://wa.me/${telp}?text=${encodeURIComponent(message)}`;
 };

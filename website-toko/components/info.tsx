@@ -40,7 +40,7 @@ const Info: React.FC<InfoProps> = ({ data }) => {
 
       <div className="mt-10 flex items-center gap-x-3">
         <Link href={waLink} target="_blank" rel="noopener noreferrer">
-          <Button className="bg-green-600 hover:bg-green-700 text-white flex items-center gap-x-2">
+          <Button className="bg-green-600 hover:bg-green-700 text-white flex items-center gap-x-2 cursor-pointer">
             Pesan via WhatsApp
             <MessageCircleIcon size={20} />
           </Button>

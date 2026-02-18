@@ -29,7 +29,6 @@ const NavbarClient: React.FC<NavbarClientProps> = ({ categories }) => {
           </Link>
 
           <nav className="hidden md:flex items-center gap-x-6">
-            {/* Link Semua Produk */}
             <Link
               href="/products"
               className={cn(
@@ -42,7 +41,6 @@ const NavbarClient: React.FC<NavbarClientProps> = ({ categories }) => {
               Produk
             </Link>
 
-            {/* Link per Kategori */}
             {categories.map((category) => {
               const href = `/category/${category.id}`;
               const active = pathname === href;

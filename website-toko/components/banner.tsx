@@ -60,7 +60,7 @@ const Banner: React.FC<BannerProps> = ({ data }) => {
               {isHome && (
                 <div className="flex justify-center pt-3">
                   <Link
-                    href="/category/7b494b4a-7f6f-4c53-82cf-ac78e965a566"
+                    href="/products"
                     className="inline-flex items-center gap-x-2 rounded-full border border-white px-6 py-3 text-sm font-medium hover:bg-white hover:text-black transition"
                   >
                     Lihat Produk

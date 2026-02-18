@@ -18,7 +18,7 @@ const ProductsPage = async () => {
           <div className="mb-8">
             <Link
               href="/"
-              className="inline-flex items-center gap-x-2 rounded-full border bg-green-100 px-4 py-2 text-sm text-neutral-600 hover:bg-green-200 hover:text-black transition cursor-pointer"
+              className="inline-flex items-center gap-x-2 rounded-full border border-green-600 text-green-600 px-5 py-2 text-sm font-medium hover:bg-green-600 hover:text-white transition"
             >
               <ArrowLeft className="w-4 h-4" />
               Kembali

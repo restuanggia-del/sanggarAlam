@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Category } from "@/types";
-import { PhoneCall, BadgeCheck } from "lucide-react";
+import { PhoneCall } from "lucide-react";
 import { createWhatsAppLink } from "@/lib/whatsapp";
 
 interface NavbarClientProps {
@@ -13,7 +13,6 @@ interface NavbarClientProps {
 
 const NavbarClient: React.FC<NavbarClientProps> = ({ categories }) => {
   const pathname = usePathname();
-
   const waLink = createWhatsAppLink({});
 
   return (
@@ -30,6 +29,20 @@ const NavbarClient: React.FC<NavbarClientProps> = ({ categories }) => {
           </Link>
 
           <nav className="hidden md:flex items-center gap-x-6">
+            {/* Link Semua Produk */}
+            <Link
+              href="/products"
+              className={cn(
+                "text-sm font-medium transition-colors",
+                pathname === "/products"
+                  ? "text-black"
+                  : "text-neutral-500 hover:text-black",
+              )}
+            >
+              Produk
+            </Link>
+
+            {/* Link per Kategori */}
             {categories.map((category) => {
               const href = `/category/${category.id}`;
               const active = pathname === href;
@@ -49,12 +62,7 @@ const NavbarClient: React.FC<NavbarClientProps> = ({ categories }) => {
             })}
           </nav>
 
-          <div className="flex items-center gap-x-4">
-            <div className="hidden lg:flex items-center gap-x-1 text-xs text-neutral-600">
-              <BadgeCheck className="h-4 w-4 text-green-600" />
-              <span>10+ Tahun Pengalaman</span>
-            </div>
-
+          <div className="flex items-center">
             <Link
               href={waLink}
               target="_blank"

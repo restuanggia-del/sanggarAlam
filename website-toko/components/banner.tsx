@@ -15,7 +15,7 @@ const Banner: React.FC<BannerProps> = ({ data }) => {
   const isHome = pathname === "/";
   const isCategory = pathname.startsWith("/category");
 
-  let title = "Jasa Pembuatan Kolam, Relief & Patung Taman";
+  let title = "Jasa Pembuatan Kolam, Relief & Patung Taman.";
   let description =
     "Melayani desain & pengerjaan kolam minimalis, relief dinding, dan patung taman dengan hasil rapi, kuat, dan tahan lama.";
 

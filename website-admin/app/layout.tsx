@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Toko Admin",
-  description: "Toko Admin",
+  title: "Admin Sanggar Alam",
+  description: "Admin panel untuk mengelola data sanggar alam",
 };
 
 export default function RootLayout({
@@ -32,8 +32,8 @@ export default function RootLayout({
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-          <ToasterProvider/>
-          <ModalProvider/>
+          <ToasterProvider />
+          <ModalProvider />
           {children}
         </body>
       </html>

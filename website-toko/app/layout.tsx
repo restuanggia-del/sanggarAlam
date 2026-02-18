@@ -11,8 +11,8 @@ const urbanist = Urbanist({
 });
 
 export const metadata: Metadata = {
-  title: "Toko Online",
-  description: "Toko Online",
+  title: "Sanggar Alam",
+  description: "Sanggar Alam Website",
 };
 
 export default function RootLayout({

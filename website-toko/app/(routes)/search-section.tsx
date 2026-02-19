@@ -26,7 +26,6 @@ const SearchSection: React.FC<Props> = ({ products }) => {
     <ScrollReveal>
       <div className="space-y-12">
         <SearchBar onSearch={setQuery} />
-
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <span className="inline-block rounded-full bg-green-100 text-green-700 px-4 py-1 text-sm font-medium mb-3">
@@ -34,7 +33,7 @@ const SearchSection: React.FC<Props> = ({ products }) => {
             </span>
           </div>
           <ProductList title="Produk Unggulan" items={displayed} />
-
+          
           {hasMore && (
             <div className="flex justify-end mt-6">
               <Link

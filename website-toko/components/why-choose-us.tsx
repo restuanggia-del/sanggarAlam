@@ -1,14 +1,6 @@
 "use client";
 
-import {
-  Shield,
-  Clock,
-  Star,
-  Hammer,
-  Phone,
-  Award,
-  Scroll,
-} from "lucide-react";
+import { Shield, Clock, Star, Hammer, Phone, Award } from "lucide-react";
 import ScrollReveal from "./scroll-reveal";
 
 const reasons = [
@@ -16,7 +8,7 @@ const reasons = [
     icon: Award,
     title: "10+ Tahun Pengalaman",
     description:
-      "Kami telah menyelesaikan ratusan proyek kolam, relief dinding, dan patung taman di seluruh Lampung.",
+      "Kami telah menyelesaikan ratusan proyek kolam, relief dinding, dan patung taman di seluruh Tulang Bawang.",
   },
   {
     icon: Hammer,

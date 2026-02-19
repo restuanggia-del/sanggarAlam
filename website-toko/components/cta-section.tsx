@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MessageCircleIcon, PhoneCall, Scroll } from "lucide-react";
+import { MessageCircleIcon, PhoneCall } from "lucide-react";
 import { createWhatsAppLink } from "@/lib/whatsapp";
 import ScrollReveal from "./scroll-reveal";
 

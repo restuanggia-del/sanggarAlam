@@ -30,6 +30,18 @@ const NavbarClient: React.FC<NavbarClientProps> = ({ categories }) => {
 
           <nav className="hidden md:flex items-center gap-x-6">
             <Link
+              href="/"
+              className={cn(
+                "text-sm font-medium transition-colors",
+                pathname === "/"
+                  ? "text-black"
+                  : "text-neutral-500 hover:text-black",
+              )}
+            >
+              Beranda
+            </Link>
+
+            <Link
               href="/products"
               className={cn(
                 "text-sm font-medium transition-colors",

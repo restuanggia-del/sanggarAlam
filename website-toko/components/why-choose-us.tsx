@@ -46,7 +46,7 @@ const WhyChooseUs: React.FC = () => {
   return (
     <ScrollReveal>
       <section className="px-4 sm:px-6 lg:px-8 py-16">
-        <div className="text-center mb-12">
+        <div className="text-center mb-6">
           <span className="inline-block rounded-full bg-green-100 text-green-700 px-4 py-1 text-sm font-medium mb-3">
             Keunggulan Kami
           </span>

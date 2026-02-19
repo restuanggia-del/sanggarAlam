@@ -13,7 +13,6 @@ const CtaSection: React.FC = () => {
     <ScrollReveal>
       <section className="px-4 sm:px-6 lg:px-8 py-16">
         <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-green-700 to-green-900 px-8 py-16 text-center">
-          {/* decorative circles */}
           <div className="absolute -top-10 -left-10 w-48 h-48 rounded-full bg-white/5" />
           <div className="absolute -bottom-16 -right-8 w-64 h-64 rounded-full bg-white/5" />
           <div className="absolute top-1/2 left-1/4 w-24 h-24 rounded-full bg-white/5" />

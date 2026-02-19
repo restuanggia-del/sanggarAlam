@@ -16,7 +16,7 @@ const Footer = () => {
 
   return (
     <ScrollReveal>
-      <footer className="bg-neutral-50 border-t mt-16">
+      <footer className="bg-neutral-50 border-t">
         <div className="mx-auto max-w-7xl px-6 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-3">

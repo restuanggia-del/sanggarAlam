@@ -1,7 +1,6 @@
 import { Product } from "@/types";
 import NoResults from "./ui/no-results";
 import ProductCard from "./ui/product-card";
-import { Scroll } from "lucide-react";
 import ScrollReveal from "./scroll-reveal";
 
 interface ProductListProps {
@@ -12,7 +11,7 @@ interface ProductListProps {
 const ProductList: React.FC<ProductListProps> = ({ title, items }) => {
   return (
     <section className="space-y-6">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-center gap-x-2">
         <h3 className="font-bold text-3xl">{title}</h3>
       </div>
 

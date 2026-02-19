@@ -28,15 +28,11 @@ const SearchSection: React.FC<Props> = ({ products }) => {
         <SearchBar onSearch={setQuery} />
 
         <div className="px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
+          <div className="text-center">
             <span className="inline-block rounded-full bg-green-100 text-green-700 px-4 py-1 text-sm font-medium mb-3">
               Pilihan Terbaik
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-              Produk Unggulan
-            </h2>
           </div>
-
           <ProductList title="Produk Unggulan" items={displayed} />
 
           {hasMore && (
